@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello SeaJS boilerplate</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>SeaJS load module mechanism</h1>
+    <p>Open your console</p>
+    <ol>
+        <li>require module: main</li>
+        <li>require module: mod1</li>
+        <li>hello mod1</li>
+        <li>require module: mod2</li>
+        <li>hello mod2</li>
+        <li>hello main</li>
+    </ol>
+    <h2>Conclusion</h2>
+    <p>SeaJS execute modules as <strong>LAZY</strong> as possible(SeaJS只会在真正需要使用[依赖]模块时才执行该模块)</p>
+    <p>SeaJS async load modules, but execute them accordance with the order in your code(SeaJS是异步加载模块的没错, 但执行模块的顺序也是严格按照模块在代码中出现(require)的顺序, 这样才更符合逻辑吧! 你说呢, RequireJS?)</p>
+    <p>Test with SeaJS 2.0.0</p>
+    <script data-main="./js/app.js" src="lib/sea.js"></script>
+</body>
+</html>
