@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>test css3 html</title>
+
+		<style type="text/css">
+			body {
+				background-color: #000000;
+			}
+			
+			.baidu-headline-img {
+				width: 200px;
+				display: block;
+				position: absolute;
+				top: 10%;
+				max-width: 100%;
+				left: 50%;
+				margin-left: 250px;
+				-webkit-animation: upAndDownImg 3s infinite ease-in-out;
+				-moz-animation: upAndDownImg 3s infinite ease-in-out;
+				-o-animation: upAndDownImg 3s infinite ease-in-out;
+				animation: upAndDownImg 3s infinite ease-in-out;
+			}
+			/*
+			    animation-name: upAndDownImg;
+			    animation-duration: 3s;
+			    animation-timing-function: ease-in-out;
+			    animation-delay: initial;
+			    animation-iteration-count: infinite;
+			    animation-direction: initial;
+			    animation-fill-mode: initial;
+			    animation-play-state: initial;
+			  */
+			
+			@-webkit-keyframes upAndDownImg {
+				0% {
+					top: 20%
+				}
+				50% {
+					top: 30%
+				}
+				100% {
+					top: 20%
+				}
+			}
+			
+			@-moz-keyframes upAndDownImg {
+				0% {
+					top: 20%
+				}
+				50% {
+					top: 30%
+				}
+				100% {
+					top: 20%
+				}
+			}
+			
+			@-o-keyframes upAndDownImg {
+				0% {
+					top: 20%
+				}
+				50% {
+					top: 30%
+				}
+				100% {
+					top: 20%
+				}
+			}
+			
+			@-ms-keyframes upAndDownImg {
+				0% {
+					top: 20%
+				}
+				50% {
+					top: 30%
+				}
+				100% {
+					top: 20%
+				}
+			}
+			
+			@keyframes upAndDownImg {
+				0% {
+					top: 20%
+				}
+				50% {
+					top: 30%
+				}
+				100% {
+					top: 20%
+				}
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="row">
+
+			<img class="baidu-headline-img" src="//static.oneapm.com/assets/sites2/images/bi/0cf8a756.biclass.png">
+
+		</div>
+
+	</body>
+
+</html>
