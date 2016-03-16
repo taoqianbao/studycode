@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>test css position, how to make position</title>
+
+		<style type="text/css">
+			*{
+				margin: 0; padding: 0;
+			}
+			.container{
+				border: solid 1px red;
+				background-color: #40C0FF;
+			}
+				#left { background-color: #ccc; width: 200px; height: 200px; float: left;}
+				#center { background-color: #eee; width: 200px; height: 200px; float: left; position: absolute; top: 30px; left: 30px;}
+				#right { background-color: #666; width: 200px; height: 200px; float: left; z-index: 1;}
+		</style>
+
+	</head>
+
+	<body>
+		
+		<div id="wrap" style="position:static;">
+			<div id="left">Left</div>
+			<div id="center">Center</div>
+			<div id="right">Right</div>
+		</div>
+
+		<div>
+
+			<div class="container" style="position: absolute;">
+				3. position:absolute
+				<br /> When you specify position:absolute, the element is removed from the document and placed exactly where you tell it to go.
+
+			</div>
+
+			<div class="container" style="position: fixed;">fixed</div>
+
+			<div class="container" style="position: inherit;">inherit</div>
+
+			<div class="container" style="position: initial;">initial</div>
+
+			<div class="container" style="position: page;">page</div>
+
+			<div class="container" style="position: relative;">
+
+				2. position:relative
+				<br /> If you specify position:relative, then you can use top or bottom, and left or right to move the element relative to where it would normally occur in the document.
+
+			</div>
+
+			<div class="container" style="position: static;">
+
+				1. position:static
+				<br /> The default positioning for all elements is position:static, which means the element is not positioned and occurs where it normally would in the document.
+				<br /> Normally you wouldn't specify this unless you needed to override a positioning that had been previously set.
+
+			</div>
+
+			<div class="container" style="position: sticky;">sticky</div>
+
+			<div class="container" style="position: -ms-device-fixed;">-ms-device-fixed</div>
+
+			<div class="container" style="position: -ms-page;">-ms-page</div>
+
+		</div>
+
+	</body>
+
+</html>
