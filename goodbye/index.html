@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>再见-恒昌</title>
+		<link href="./css/goodbye-2016.css" type="text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="container" class="container">
+			<div class="content">
+
+				<!--  -->
+				<div id="scene1" class="scene">
+					<div class="scene-in">
+						<div class="scene-images">
+
+							<img class="scene2-cloud1" src="./imgs/scene2-cloud1.png" />
+							<img class="scene2-cloud2" src="./imgs/scene2-cloud2.png" />
+							
+							<div class="animate scene1-all1">
+								<img src="./imgs/scene1-1.jpg" />
+								<i class="animate scene2-2"></i>
+							</div>
+							
+						</div>
+						<div class="scene-texts">
+							<div class="scene-vertical">
+								<h2 class="scene-title">一年前</h2>
+								<p class="scene-desc">
+									
+									<span class="hidden">恒昌</span>我们相约恒昌大平台
+									<br /> 把公司内外的小伙伴
+									<span class="hidden">紧紧</span>连结在一起<br />
+								</p>
+							</div>
+							<i></i>
+						</div>
+						<a href="javascript:" id="scene1-down" class="scene-down" title="下一屏">下一屏</a>
+					</div>
+				</div>
+								
+				<!--  -->
+				<div id="scene2" class="scene">
+					<div class="scene-in">
+						<div class="scene-images">
+							<img class="scene2-cloud1" src="./imgs/scene2-cloud1.png" />
+							<img class="scene2-cloud2" src="./imgs/scene2-cloud2.png" />
+							<div class="animate scene2-cloud3">
+								<img src="./imgs/scene2-31.jpg" />
+								<i class="animate scene2-2"></i>
+							</div>							
+							
+						</div>
+						<div class="scene-texts">
+							<div class="scene-vertical">
+								<h2 class="scene-title">无数个日日夜夜</h2>
+								<p class="scene-desc">
+									<span class="hidden">你</span>曾经因为个贷
+									<br /> 小伙伴们日日夜夜
+									<span class="hidden">同志们</span>始终相伴<br />
+								</p>
+							</div>
+							<i></i>
+						</div>
+						<a href="javascript:" id="scene2-down" class="scene-down" title="下一屏">下一屏</a>
+					</div>
+				</div>
+				
+				<!--  -->
+				<div id="scene3" class="scene">
+					<div class="scene-in">
+						<div class="scene-images">
+							
+							<div class="animate scene2-cloud3">
+								<img src="./imgs/scene3-1.jpg" />
+								<i class="animate scene2-2"></i>
+							</div>
+						</div>
+						<div class="scene-texts">
+							<div class="scene-vertical">
+								<h2 class="scene-title">我们有过欢乐，更有收获</h2>
+								<p class="scene-desc">
+									<span class="hidden">爱</span>小伙伴们快乐成长
+									<br /> 过好每一天
+									<span class="hidden">时间</span>定格在那一刻<br />
+								</p>
+							</div>
+							<i></i>
+						</div>
+						<a href="javascript:" id="scene2-down" class="scene-down" title="下一屏">下一屏</a>
+					</div>
+				</div>
+
+				<!-- 内部员工 -->
+				<div id="scene8" class="scene">
+					<div class="scene-in">
+						<div class="scene-vertical">
+							<img class="scene-title scene8-1" src="./imgs/scene8-1.png" />
+							<p class="scene-desc">这些并肩奋斗的人们，<span class="hidden">可能是每天比和家人相处时间更长的人。<br /></span>你的成就里，是否也有他们的帮助和努力？</p>
+							<div class="scene8-now">
+								<img src="./imgs/scene8-31.jpg" />
+							</div>
+							<div class="scene-space">
+								<div class="animate scene8-19"><img src="./imgs/scene8-19.png" /></div>
+								<div class="animate scene8-20"><img src="./imgs/scene8-20.png" /></div>
+								<div class="animate scene8-18"><img src="./imgs/scene8-18.png" /></div>
+								<div class="animate scene8-6"><img src="./imgs/scene8-6.png" /></div>
+								<div class="animate scene8-12"><img src="./imgs/scene8-12.png" /></div>
+								<div class="animate scene8-13"><img src="./imgs/scene8-13.png" /></div>
+								<div class="animate scene8-14"><img src="./imgs/scene8-14.png" /></div>
+								<div class="animate scene8-15"><img src="./imgs/scene8-15.png" /></div>
+								<div class="animate scene8-16"><img src="./imgs/scene8-16.png" /></div>
+								<div class="animate scene8-17"><img src="./imgs/scene8-17.png" /></div>
+							</div>
+						</div><i></i>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<ul id="sceneCtrl" class="scene-ctrl">
+			<li><a href="javascript:" data-index="0">1</a></li>
+			<li><a href="javascript:" data-index="1">2</a></li>
+			<li><a href="javascript:" data-index="2">3</a></li>
+			<li><a href="javascript:" data-index="3">4</a></li>
+		</ul>
+
+		<script src="./js/jquery-1.7.1.min.js"></script>
+		<script src="./js/iscroll.js"></script>
+		<script>
+			$(function() {
+				});
+				if (window.addEventListener) {
+					var newYearScroll = new IScroll("#container", {
+						mouseWheel: true,
+						momentum: false,
+						snap: true
+					})
+				} else {
+					// IE7-IE8
+					var newYearScroll = {
+						content: $("#container > div"),
+						currentPage: {
+							pageY: 0
+						},
+						next: function() {
+							this.currentPage.pageY++;
+							var index = this.currentPage.pageY;
+							if (index > 9) {
+								index = 9;
+								return this;
+							}
+							this.content.animate({
+								top: -100 * index + "%"
+							}, this.scrollEnd);
+						},
+						prev: function() {
+							this.currentPage.pageY--;
+							var index = this.currentPage.pageY;
+							if (index < 0) {
+								index = 0;
+								return this;
+							}
+							this.content.animate({
+								top: -100 * index + "%"
+							}, this.scrollEnd)
+						},
+						goToPage: function(x, y) {
+							this.currentPage.pageY = y;
+							this.content.animate({
+								top: -100 * y + "%"
+							}, this.scrollEnd);
+						},
+						on: function(name, fn) {
+							this[name] = fn;
+						}
+					}
+				}
+				
+				$(".scene-down").on("click", function() {
+					newYearScroll.next()
+				});
+				
+				$("#sceneCtrl a").on("click", function() {
+					newYearScroll.goToPage(0, $(this).attr("data-index") * 1)
+				});
+				
+				newYearScroll.on("scrollEnd", function() {
+					var pageY = newYearScroll.currentPage.pageY;
+					$("#sceneCtrl .cur").removeClass("cur");
+					$("#sceneCtrl a[data-index=" + pageY + "]").addClass("cur");
+					$(".scene").eq(pageY).addClass("active");
+				});
+				
+				$(document).bind("keyup", function(event) {
+					var code = event.keyCode;
+					if (code == 38) {
+						newYearScroll.prev()
+					} else if (code == 40) {
+						newYearScroll.next()
+					}
+				});
+				newYearScroll.goToPage(0, 0);
+			
+		</script>
+	</body>
+
+</html>

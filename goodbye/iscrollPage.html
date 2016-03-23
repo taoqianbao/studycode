@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>再见-恒昌</title>
+		<title></title>
+		<style type="text/css">
+			html {
+				font-size: 62.5%;
+			}
+			
+			html,
+			body,
+			div {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#container {}
+			
+			.container {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+			
+			.content {
+				height: 400%;
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+			
+			.scene {
+				width: 100%;
+				height: 25%;
+				position: relative;
+				overflow: hidden;
+				background-color: #0E83CD;
+			}
+			
+			#scene1 {
+				background-color: #1EC868;
+			}			
+			#scene2 {
+				background-color: #2AC56C;
+			}			
+			#scene3 {
+				background-color: #31D19E;
+			}
+			#scene4 {
+				background-color: #F39C12;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="container" class="container">
+			<div class="content">
+				<div id="scene1" class="scene">
+					hello 1
+				</div>
+				<div id="scene2" class="scene">
+					hello 2
+				</div>
+				<div id="scene3" class="scene">
+					hello 3
+				</div>
+				<div id="scene4" class="scene">
+					hello 4
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/jquery-1.7.1.min.js"></script>
+		<script src="./js/iscroll.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var newYearScroll = new IScroll("#container", {
+					mouseWheel: true,
+					momentum: false,
+					snap: true
+				})
+			});
+		</script>
+	</body>
+
+</html>
