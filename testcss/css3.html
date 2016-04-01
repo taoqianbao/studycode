@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>w3school css3</title>
+		<style type="text/css">
+			html,
+			body,
+			section {
+				margin: 0;
+				padding: 0;				
+			}
+			
+			html {				
+				font-size: 62.5%;
+			}
+			
+			section {
+				width: 100%;
+				height: 250px;
+				margin-bottom: 40px;
+				border: solid 1px red;
+				box-sizing: border-box;
+				clear: all;
+				overflow: hidden;
+			}
+			
+			style {
+				display: none;
+			}
+			
+			div::before {
+				content: "-";
+			}
+			
+			div::after {
+				content: " - ";
+			}		
+			
+			a::after {
+				content: "(" attr(href) ")";
+			}
+			
+			.clear-fix {
+				*overflow: hidden; *zoom:1;
+			}
+			.clear-fix:after {
+				display: table; content: ""; widows: 0; clear: both;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<section>
+			<a href="http://www.baidu.com">baidu</a>
+			
+		</section>
+		<section>
+			<h1> background images </h1>
+			<div class="demo-bgimg">
+				demo-bgimg
+			</div>
+			<style type="text/css">
+				div.demo-bgimg {
+					width: 100px;
+					height: 100px;
+					margin-left: 50px;					
+					background: url(http://pic.to8to.com/attch/day_160218/20160218_d968438a2434b62ba59dH7q5KEzTS6OH.png);
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					border: solid 4px #3060A0;
+					border-bottom: solid 1px #000000;
+					padding: 15px;
+					background-origin: padding-box;
+				}
+			</style>
+
+		</section>
+		
+		
+		<section>
+			<h1> text </h1>
+			<div class="demo-text clear-fix">
+				text-shadow / word-wrap
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+			</div>
+			<div class="table">
+				table1
+				
+				table1
+				
+				table1
+			</div>
+			<style type="text/css">
+			
+				div.demo-text {
+					float: left;
+					width: 100px;
+					height: 100px;
+					border: solid 4px #3060A0;
+					margin-left: 50px;
+					text-shadow: 5px 5px 5px #FF0000;
+					word-wrap: break-word;
+				}
+				
+				div.table {
+					float: right;
+					width: 200px;border: solid 1px #3060A0;
+					-webkit-column-count: 4;
+					-webkit-column-gap: 40px;
+					-webkit-column-rule: 4px outset #3060A0;
+					column-rule: 4px outset #3060A0;
+				}
+				
+			</style>
+
+		</section>
+
+		<section>
+			<h1> transform </h1>
+			<div class="demo-transform">
+				demo-transform
+			</div>
+			<style type="text/css">
+				div.demo-transform {
+					width: 100px;
+					height: 100px;
+					margin-left: 50px;			
+					background: blanchedalmond;
+					transform: rotate(30deg);
+				}
+			</style>
+
+		</section>
+
+	</body>
+
+</html>
