@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test handlebar requirejs </title>
+    <script type="text/javascript" data-main="js/handlebarstest.js" src="//cdn.bootcss.com/require.js/2.2.0/require.js" />
+  </head>
+  <body>
+
+    <h2>Simple handlebars demo</h2>
+     <button id="btn1">Click me</button>
+     <div id="my_div1">
+
+     </div>
+     <script id="table1" type="text/x-handlebars-template">
+          <table>
+              <tr>
+                  <td>UserName</td>
+                  <td>Name</td>
+                  <td>Email</td>
+              </tr>
+               {{#if users}}
+                  //================================此处如果是接送数组是多值，即用方括号括起来的数据，需要用#each进行循环显示================================
+                  {{#each users}}
+                      <tr>
+                          <td>{{username}}</td>
+                          <td>{{firstname}}-{{lastname}}</td>
+                          <td>{{email}}</td>
+                      </tr>
+                  {{/each}}
+              {{else}}
+                  <tr>
+                      <td colspan="3"></td>
+                  </tr>
+               {{/if}}
+          </table>
+      </script>
+      <script type="text/javascript">
+          //===================主函数入口================================
+          require(["app/home"],function(home){
+              home.init();
+          })
+      </script>
+  </body>
+</html>
