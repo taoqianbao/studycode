@@ -1,0 +1,14 @@
+{
+  "name": "studylodash",
+  "version": "1.0.0",
+  "description": "study lodash",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "keywords": [
+    "lodash"
+  ],
+  "author": "Peter",
+  "license": "MIT"
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>lodash demo</title>
+        <script src="bower_components/lodash/dist/lodash.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+        <h2>lodash demo</h2>
+
+        <script type="text/javascript">
+
+            var arr = ['a', 'b', 'c', 'd'];
+
+            console.log(_.chunk(arr, 2));
+
+            //例如 false、null、 0、""、undefined 和 NaN 都是“假值”。
+            console.log(_.compact([
+                0,
+                1,
+                false,
+                2,
+                '',
+                3
+            ]));
+
+            console.log("_.pull([11,2,3,12,3,2], 2, 3) = ", _.pull([
+                11,
+                2,
+                3,
+                12,
+                2,
+                3
+            ], 2, 3));
+
+            _.defer(function(stamp) {
+                console.log(_.now() - stamp);
+            }, _.now());
+
+            var greet = function(greeting, punctuation) {
+                console.log(arguments);
+                return greeting + ' ' + this.user + punctuation;
+            };
+
+            var object = {
+                'user': 'fred'
+            };
+            
+            var bound = _.bind(greet, object, 'hi', ' peter');
+
+            console.log(bound(' 333'));
+
+        </script>
+    </body>
+</html>

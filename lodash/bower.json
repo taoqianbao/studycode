@@ -1,0 +1,23 @@
+{
+  "name": "studylodash",
+  "description": "study lodash",
+  "main": "index.js",
+  "authors": [
+    "Peter"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "lodash"
+  ],
+  "homepage": "https://github.com/taoqianbao/studycode",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.15.0"
+  }
+}
