@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document-</title>
+        <style media="screen">
+            li,
+            ol,
+            ul {
+                margin: 0;
+                padding: 0;
+                vertical-align: baseline;
+            }
+            ol,
+            ul {
+                list-style: none;
+            }
+            .mod_slider {
+                height: 200px;
+                padding: 10px 0;
+                background-color: #e8e8ed;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .mod_slider .inner {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+            .mod_slider .pic_list li {
+                float: left;
+                padding: 0;
+                width: 320px;
+                height: 320px;
+                position: relative;
+            }
+
+            #loopImgUl li img{
+              width: 100%; height: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+<!-- http://wqitem.jd.com/item/view?sku=3650540#main -->
+        <div class="mod_slider" id="loopImgContainer"  style="height:375px;">
+
+            <div class="inner">
+
+                <ul class="piclist" id="loopImgUl">
+                    <li style="width:375px; height:375px;">
+                        <img src="./imgs/demo1.jpg">
+                    </li>
+                    <li id="firstImgLi" style="width:375px; height:375px;">
+                        <img src="./imgs/demo2.jpg">
+                    </li>
+                    <li style="width:375px; height:375px;">
+                        <img src="./imgs/demo1.jpg">
+                    </li>
+                    <li style="width:375px; height:375px;">
+                        <img src="./imgs/demo1.jpg">
+                    </li>
+                    <li id="firstImgLi" style="width:375px; height:375px;">
+                        <img src="./imgs/demo2.jpg">
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
